@@ -2,6 +2,7 @@ import React from 'react';
 import Pregunta from './components/Pregunta';
 
 function App() {
+
   return (
 
     <div className="container">
