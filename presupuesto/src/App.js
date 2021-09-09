@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import Formulario from './components/Formulario';
 import Pregunta from './components/Pregunta';
+
 
 function App() {
 
-  const [presupuesto, guardarPresupuesto ] = useState(0);
-  const [restante, guardarRestante ] = useState(0);
+  const [presupuesto, guardarPresupuesto] = useState(0);
+  const [restante, guardarRestante] = useState(0);
 
   return (
 
@@ -14,9 +16,22 @@ function App() {
 
         <div className="contenido-principal contenido" >
           <Pregunta
-              guardarPresupuesto={guardarPresupuesto}
-              guardarRestante={guardarRestante}
-           />
+            guardarPresupuesto={guardarPresupuesto}
+            guardarRestante={guardarRestante}
+          />
+
+          <div className="row">
+
+            <div className="one-half column">
+              <Formulario />
+            </div>
+
+            <div className="one-half column">
+              2
+            </div>
+
+          </div>
+
         </div>
 
       </header>
