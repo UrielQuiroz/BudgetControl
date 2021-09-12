@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Formulario from './components/Formulario';
 import Pregunta from './components/Pregunta';
+import Listado from './components/Listado';
 
 
 function App() {
@@ -41,7 +42,9 @@ function App() {
               </div>
 
               <div className="one-half column">
-                2
+                <Listado
+                    gastos={gastos}
+                />
               </div>
             </div>
 
